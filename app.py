@@ -6,8 +6,7 @@ import os
 # -------------------- Load Model -------------------- #
 @st.cache_resource
 def load_model():
-    model_path = os.path.join("saved_models", "random_forest_model.pkl")
-
+    model_path = "https://github.com/likharshikha2104-pixel/salary_prediction/blob/main/linear_regression_model.pkl"
     if not os.path.exists(model_path):
         st.error("❌ Model file not found. Make sure it exists in 'saved_models/' folder.")
         st.stop()
